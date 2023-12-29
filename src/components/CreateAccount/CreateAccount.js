@@ -1,16 +1,16 @@
 import img1 from "../../assets/Screenshot 2023-12-28 074610.png";
 import './CreateAccount.scss';
 
-export default function CreateAccount() {
+export default function CreateAccount({setSection}) {
     return (
         <div className="flex">
-            <MainPage/>
+            <MainPage setSection={setSection}/>
             <Image/>
         </div>
     )
 }
 
-function MainPage() {
+function MainPage({setSection}) {
     return (
         <div className="md:w-3/5 w-full pt-7 relative">
             <div class="ml-4 flex-grow border-t border-gray-500"></div>
@@ -35,7 +35,7 @@ function MainPage() {
                     </div>
                 </form>
             </div>
-            <button className="flex gap-1 items-center absolute -bottom-16 md:bottom-10 right-10 bg-blue-700 text-white px-4 py-2 rounded-sm">
+            <button onClick={() => setSection(prev => prev + 1)} className="flex gap-1 items-center absolute -bottom-16 md:bottom-10 right-10 bg-blue-700 text-white px-4 py-2 rounded-sm">
                 Continue
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
