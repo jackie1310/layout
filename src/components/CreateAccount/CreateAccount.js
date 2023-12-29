@@ -4,13 +4,13 @@ import './CreateAccount.scss';
 export default function CreateAccount({setSection}) {
     return (
         <div className="flex">
-            <MainPage setSection={setSection}/>
+            <MainCreate setSection={setSection}/>
             <Image/>
         </div>
     )
 }
 
-function MainPage({setSection}) {
+function MainCreate({setSection}) {
     return (
         <div className="md:w-3/5 w-full pt-7 relative">
             <div class="ml-4 flex-grow border-t border-gray-500"></div>
@@ -35,7 +35,7 @@ function MainPage({setSection}) {
                     </div>
                 </form>
             </div>
-            <button onClick={() => setSection(prev => prev + 1)} className="flex gap-1 items-center absolute -bottom-16 md:bottom-10 right-10 bg-blue-700 text-white px-4 py-2 rounded-sm">
+            <button onClick={() => setSection(prev => prev + 1)} className="active:scale-75 transform transition duration-300 ease-in-out flex gap-1 items-center absolute -bottom-16 md:bottom-10 right-10 bg-blue-700 text-white px-4 py-2 rounded-sm">
                 Continue
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

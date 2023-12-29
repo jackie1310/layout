@@ -27,8 +27,8 @@ function SignUpSection() {
                     <div class="flex-grow border-t border-gray-300"></div>
                 </div>
                 <input type='email' placeholder='name@company.com' className='relative border border-gray-400 px-4 py-1'/>
-                <button className='active:scale-75 transform transition duration-300 ease-in-out md:block hidden w-80 py-2 bg-blue-500 text-white rounded-sm'>Continue</button>
-                <button className='active:scale-75 transform transition duration-300 ease-in-out py-2 bg-blue-500 text-white rounded-sm md:hidden'>Create acount</button>
+                <button className='active:scale-75 transform transition duration-300 ease-in-out md:block hidden w-80 py-2 bg-blue-500 text-white rounded-sm' onClick={() => window.location = "/create"}>Continue</button>
+                <button className='active:scale-75 transform transition duration-300 ease-in-out py-2 bg-blue-500 text-white rounded-sm md:hidden' onClick={() => window.location = "/create"}>Create acount</button>
             </div>
             <div className='mt-10 hidden md:block'>
                 <h3 className='max-w-60 mx-auto'>By proceeding, you agree to the</h3> 

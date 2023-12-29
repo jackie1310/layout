@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './components/SignUp';
 import Create from './components/Create';
+import SocialAds from './components/SocialAds/SocialAds';
 
 function App() {
   return (
